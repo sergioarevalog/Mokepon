@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+body{
+    font-family: 'Bruno Ace SC', cursive;
+    background-color: #19A7CE;
+}
+
+#mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #212A3E;
+}
+
+.titulo {
+    width: 500px;
+    color: #9BA4B5;
+    background-color: #212A3E;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 32px;
+}
+
+.subtitulo {
+    font-size: 20px;
+    color:#212A3E;
+}
+
+.cuadro {
+    width: 600px;
+    height: 360px;
+    padding: 10px;
+    background: #9BA4B5;
+    display: flex;
+    align-items: center;
+}
+
+.tarjetas, .tarjetas-ataques {
+    padding: 20px 0 20px 0;
+    display: flex;
+    gap: 25px;
+}
+
+.tarjeta-de-mokepon {
+    font-size: 16px;
+    width: 220px;
+    height: 180px;
+    background: #394867;
+    box-sizing: border-box;
+    border: 1px solid #212A3E;
+    text-align: center;
+    border-radius: 20px;
+    color: #9BA4B5;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+}
+.tarjeta-de-mokepon img {
+    width: 100px;
+}
+.boton-seleccionar { 
+    margin: 20px 0 0 0;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background: #212A3E;
+    border: 2px solid #394867;
+    font-size: 17px;
+    font-family: 'Bruno Ace SC', cursive;
+    color: #9BA4B5;
+}
+input {
+    display: none;
+}
+input:checked + label{
+    background: #5c6983;
+}
+
+#ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    width: 100px;
+    background-color: #394867;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 5px;
+    border: 1px solid #212A3E;
+    text-align: center;
+    border-radius: 20px;
+    color: #9BA4B5;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+#mensajes {
+    width: 310px;
+    background: #212A3E;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    color: #9BA4B5;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    width: 100px;
+    background-color: #394867;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 5px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 20px;
+    color: #9BA4B5;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 150px 150px;
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 450px) {
+    .titulo {
+        width: 350px;
+        color: #9BA4B5;
+        background-color: #212A3E;
+        text-align: center;
+        border-radius: 50px;
+        font-size: 22px;
+    }
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+}
